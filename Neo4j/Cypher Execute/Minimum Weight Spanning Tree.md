@@ -15,7 +15,6 @@ CREATE (a:Place {id: 'A'}),
        (c)-[:LINK {cost:5}]->(e),
        (f)-[:LINK {cost:1}]->(g);
 ```
-<hr>
 
 # Dựng đồ thị trong Graph Catalog
 ```
