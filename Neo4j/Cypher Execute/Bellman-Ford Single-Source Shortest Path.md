@@ -38,8 +38,8 @@ RETURN gds.graph.project(
 
 # Chạy ở chế độ stream
 ```
-MATCH (source:Node {name: 'A'})  // Lấy node nguồn (A)
-CALL gds.bellmanFord.stream('myGraph', {
+MATCH (source:Node {name: 'A'})
+CALL gds.bellmanFord.stream('Graph3', {
     sourceNode: source,         
     relationshipWeightProperty: 'cost'
 })
