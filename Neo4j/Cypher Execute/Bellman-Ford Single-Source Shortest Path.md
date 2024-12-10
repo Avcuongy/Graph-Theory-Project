@@ -22,7 +22,6 @@ CREATE (a:Node {name: 'A'}),
        (h)-[:REL {cost: -60}]->(i),
        (i)-[:REL {cost: 10}]->(g)
 ```
-<hr>
 
 # Dựng đồ thị trong Graph Catalog
 ```
