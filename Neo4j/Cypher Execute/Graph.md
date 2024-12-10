@@ -55,19 +55,3 @@ CREATE
   (v8)-[:CONNECTED {weight: 7}]->(v9),
   (v9)-[:CONNECTED {weight: 7}]->(v8)
 ```
-
-<hr>
-
-# Dựng đồ thị trong Graph Catalog
-```
-CALL gds.graph.project(
-  'myGraph', 
-  'Node', 
-  {
-    CONNECTED: {
-      type: 'CONNECTED', 
-      properties: ['weight']
-    }
-  }
-)
-```
