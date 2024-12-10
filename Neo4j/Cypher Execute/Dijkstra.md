@@ -23,10 +23,10 @@ CREATE (a:Location {name: 'A'}),
 ```
 MATCH (source:Location)-[r:ROAD]->(target:Location)
 RETURN gds.graph.project(
-  'Graph4',                     
-  'Location',                    
-  'Location',                         
-  { relationshipProperties: 'cost' }  
+  'Graph4',
+  source,
+  target,
+  { relationshipProperties: r { .cost } }
 )
 ```
 
