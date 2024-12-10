@@ -1,7 +1,7 @@
 # Dựng đồ thị trong Graph Catalog
 ```
 CALL gds.graph.project(
-  'myGraph', 
+  'Graph1', 
   'Node', 
   {
     CONNECTED: {
@@ -17,7 +17,7 @@ CALL gds.graph.project(
 # Chạy BFS ở chế độ stream
 ```
 MATCH (source:Node {name: 'v1'})
-CALL gds.bfs.stream('myGraph', {
+CALL gds.bfs.stream('Graph1', {
   sourceNode: source
 })
 YIELD path
@@ -28,8 +28,8 @@ RETURN path
 
 # Chạy DFS ở chế độ stream
 ```
-MATCH (source:Node{name:'A'})
-CALL gds.dfs.stream('myGraph', {
+MATCH (source:Node{name:'v1'})
+CALL gds.dfs.stream('Graph1', {
   sourceNode: source
 })
 YIELD path
