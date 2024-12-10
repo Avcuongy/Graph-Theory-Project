@@ -1,3 +1,19 @@
+# Dựng đồ thị trong Graph Catalog
+```
+CALL gds.graph.project(
+  'myGraph', 
+  'Node', 
+  {
+    CONNECTED: {
+      type: 'CONNECTED', 
+      properties: ['weight']
+    }
+  }
+)
+```
+
+<hr>
+
 # Chạy BFS ở chế độ stream
 ```
 MATCH (source:Node {name: 'v1'})
