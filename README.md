@@ -17,7 +17,7 @@ Repository này chứa các file code được xây dựng để kết nối v�
 - Triển khai các thuật toán đồ thị trên các hệ thống Graph Database khác nhau.
 - Cải thiện hiệu quả truy vấn và phân tích dữ liệu đồ thị thông qua việc sử dụng các Graph Database và thuật toán liên quan.
 
-## Nội dung của Repository
+## Nội dung
 
 - **Kết nối đến Neo4j**: Sử dụng thư viện `neo4j` để kết nối và truy vấn dữ liệu.
 - **Kết nối đến ArangoDB**: Cung cấp cách thức kết nối và làm việc với cơ sở dữ liệu đồ thị ArangoDB.
