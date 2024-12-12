@@ -1,4 +1,7 @@
-# Đồ án: Tìm hiểu và ứng dụng các Graph Database
+<div align="center">
+
+# Tìm hiểu và ứng dụng các Graph Database
+</div>
 
 ## Giới thiệu
 
